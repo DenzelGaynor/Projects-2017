@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Spoiler Reveal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="games.html">Games</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="movies.html">Movies</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="tv.html">TV Shows</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="move">
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="display-3 text-xs-center">TV Shows</h1>
+      <p class="lead text-xs-center">Too lazy to binge some seasons of the newest TV shows?</p>
+      <hr class="my-2">
+      <a class="btn bg-inverse btn-lg text-xs-center" href="#tv" role="button">See Below!</a>
+      <form class="form-inline float-xs-right hidden-sm-down">
+        <input class="form-control" type="text" placeholder="Search">
+      <button class="btn bg-inverse" type="submit" name="submit">Search</button>
+    </form>
+    </div>
+
+
+    <div class="content col-md-6" id="tv">
+      <h1>The Walking Dead</h1>
+      <div class="spoiler">
+        <img class="img-fluid image" src="images/walkingdead.png" width="600px" height="300px">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non quam aliquid neque quod, ullam fugit ipsam minima architecto possimus, officiis hic cumque rem nesciunt fugiat temporibus, ex necessitatibus. Suscipit.</p>
+      </div>
+    </div>
+
+    <div class="content col-md-6">
+      <h1>One Tree Hill</h1>
+      <div class="spoiler">
+        <img class="img-fluid" src="images/onetreehill.jpg" width="600px" height="300px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non quam aliquid neque quod, ullam fugit ipsam minima architecto possimus, officiis hic cumque rem nesciunt fugiat temporibus, ex necessitatibus. Suscipit.</p>
+      </div>
+    </div>
+
+    <div class="content col-md-6">
+      <h1>Greys Anatomy</h1>
+      <div class="spoiler">
+        <img class="img-fluid" src="images/greyanatomy.jpg" width="600px" height="300px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non quam aliquid neque quod, ullam fugit ipsam minima architecto possimus, officiis hic cumque rem nesciunt fugiat temporibus, ex necessitatibus. Suscipit.</p>
+      </div>
+    </div>
+
+    <div class="content col-md-6">
+      <h1>Dexter</h1>
+      <div class="spoiler">
+        <img class="img-fluid" src="images/dexter.jpg" width="600px" height="300px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non quam aliquid neque quod, ullam fugit ipsam minima architecto possimus, officiis hic cumque rem nesciunt fugiat temporibus, ex necessitatibus. Suscipit.</p>
+      </div>
+    </div>
+
+    <div class="content col-md-6">
+      <h1>Lost</h1>
+      <div class="spoiler">
+        <img class="img-fluid" src="images/lost.jpg" width="600px" height="300px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores non quam aliquid neque quod, ullam fugit ipsam minima architecto possimus, officiis hic cumque rem nesciunt fugiat temporibus, ex necessitatibus. Suscipit.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="footer text-xs-center">
+    <footer>
+      <p>&copy; 2016 </p>
+    </footer>
+  </div>
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script/spoiler.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+    spoilerAlert('spoiler');
+    spoilerAlert('.spoiler', {max: 4, partial: 2});
+  });
+</script>
+
+</body>
+</html>
