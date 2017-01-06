@@ -31,22 +31,22 @@ let templar = new Hero('Templar', 'The mighty Templar, raised in the city of Bud
 	125, 'One-Handed Sword and Sheild', 'The Templar can heal all allies back to full health and mana for his power up, cooldown of 50 seconds.');
 
 warriorBtn.addEventListener('click', () => {
-	if (backBtn.className == "hide") {
-		backBtn.style.display = 'block';
-	 let charDescription = "<h2>This is the " + warrior.name + "<br><br>" + 
-	 "His description is as follows: " + warrior.description + "<br><br>" + "His health is a crazy " 
-	 + warrior.health + "hp".toUpperCase() + "<br><br>" + "His weapon? The mighty " + warrior.weapon 
-	 + "<br><br>" + "Finally, his mighty power up is: " + warrior.powerUp + "</h2>";
-	 character.innerHTML = charDescription;
-	}
+	if (backBtn.className = "hide") {
+	backBtn.style.display = 'block';
 
+	let charDescription = "<h2>This is the " + warrior.name + "<br><br>" + 
+	"His description is as follows: " + warrior.description + "<br><br>" + "His health is " 
+	+ warrior.health + "hp".toUpperCase() + "<br><br>" + "His weapon? The mighty " + warrior.weapon 
+	+ "<br><br>" + "Finally, his mighty power up is: " + warrior.powerUp + "</h2>";
+	character.innerHTML = charDescription;
+	}
 });
 
 magicianBtn.addEventListener('click', () => {
 	if (backBtn.className == "hide") {
 		backBtn.style.display = 'block';
 	 let charDescription = "<h2>This is the " + magician.name + "<br><br>" + 
-	 "His description is as follows: " + magician.description + "<br><br>" + "His health is a crazy " 
+	 "His description is as follows: " + magician.description + "<br><br>" + "His health is " 
 	 + magician.health + "hp".toUpperCase() + "<br><br>" + "His weapon? The knowlegable " + magician.weapon 
 	 + "<br><br>" + "Finally, his power up is: " + magician.powerUp + "</h2>";
 	 character.innerHTML = charDescription;
@@ -68,7 +68,7 @@ warlockBtn.addEventListener('click', () => {
 	if (backBtn.className == "hide") {
 		backBtn.style.display = 'block';
 	 let charDescription = "<h2>This is the " + warlock.name + "<br><br>" + 
-	 "His description is as follows: " + warlock.description + "<br><br>" + "His health is a crazy " 
+	 "His description is as follows: " + warlock.description + "<br><br>" + "His health is " 
 	 + warlock.health + "hp".toUpperCase() + "<br><br>" + "His weapon? The deadly " + warlock.weapon 
 	 + "<br><br>" + "Finally, his power up is: " + warlock.powerUp + "</h2>";
 	 character.innerHTML = charDescription;
@@ -79,10 +79,10 @@ templarBtn.addEventListener('click', () => {
 	if (backBtn.className == "hide") {
 		backBtn.style.display = 'block';
 	 let charDescription = "<h2>This is the " + templar.name + "<br><br>" + 
-	 "His description is as follows: " + templar.description + "<br><br>" + "His health is a crazy " 
+	 "His description is as follows: " + templar.description + "<br><br>" + "His health is " 
 	 + templar.health + "hp".toUpperCase() + "<br><br>" + "His weapon? The durable " + templar.weapon 
 	 + "<br><br>" + "Finally, his power up is: " + templar.powerUp + "</h2>";
-	 character.innerHTML = charDescription;magician
+	 character.innerHTML = charDescription;
 	}
 });
 
