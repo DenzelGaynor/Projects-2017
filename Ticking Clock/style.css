@@ -1,0 +1,66 @@
+
+
+
+.clock {
+   	background-image: url("clock_face.jpg");
+	position: relative;
+	width: auto;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 25px;
+}
+
+.second-hand {
+	height: 18%;
+	width:3px;
+	position: absolute;
+    left: 23%;
+	bottom: 50%;
+	background-color:red;
+		/* ROTATE */
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -ms-transform-origin: 50% 100%; /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 50% 100%; /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    transform-origin: 50% 100%; 
+
+}
+
+.minute-hand {
+	height: 35%;
+	width:6px;
+	position: absolute;
+    left: 23%;
+	bottom: 50%;
+	background-color:black;
+		/* ROTATE */
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -ms-transform-origin: 50% 100%; /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 50% 100%; /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    transform-origin: 50% 100%; 
+
+}
+
+.hour-hand {
+	height: 25%;
+	width:5px;
+	position: absolute;
+    left: 23%;
+	bottom: 50%;
+	background-color:black;
+		/* ROTATE */
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -ms-transform-origin: 50% 100%; /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 50% 100%; /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    transform-origin: 50% 100%; 
+
+}
+
+
